@@ -1,0 +1,32 @@
+name: tests
+on: [push]
+jobs:
+  tests:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: true
+      matrix:
+        os: [ ubuntu-latest ]
+        php: [ 7.4, 8.0, 8.1 ]
+
+    name: PHP${{ matrix.php }} - ${{ matrix.os }}
+
+    steps:
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          tools: composer:v2
+          coverage: none
+
+      - uses: actions/checkout@v2
+
+      - name: Install Composer Dependencies
+        run: composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+      - name: Running phpcs
+        run: ./vendor/bin/phpcs --report=full
+
+      - name: Running phpstan
+        run: ./vendor/bin/phpstan analyse --memory-limit=2G

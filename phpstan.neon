@@ -1,0 +1,10 @@
+includes:
+
+parameters:
+
+    paths:
+        - src
+
+    level: 9
+
+    checkMissingIterableValueType: false
