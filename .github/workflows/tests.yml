@@ -30,3 +30,6 @@ jobs:
 
       - name: Running phpstan
         run: ./vendor/bin/phpstan analyse --memory-limit=2G
+
+      - name: Running phpunit
+        run: ./vendor/bin/phpunit --no-coverage

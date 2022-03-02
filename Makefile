@@ -8,3 +8,4 @@ setup:
 test:
 	./vendor/bin/phpcs
 	./vendor/bin/phpstan analyse --memory-limit=2G
+	./vendor/bin/phpunit --no-coverage

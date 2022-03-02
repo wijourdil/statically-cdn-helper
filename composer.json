@@ -1,6 +1,6 @@
 {
     "name": "wijourdil/statically-cdn-helper",
-    "description": "A PHP helper to use the statically.io CDN",
+    "description": "A Laravel/Lumen PHP helper to use the statically.io CDN",
     "keywords": [
         "laravel",
         "lumen",
@@ -13,6 +13,14 @@
     "autoload": {
         "psr-4": {
             "Wijourdil\\Statically\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wijourdil\\Statically\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -22,13 +30,15 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0"
+        "php": "^7.4|^8.0",
+        "ext-json": "*"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.4",
         "squizlabs/php_codesniffer": "^3.6",
         "friendsofphp/php-cs-fixer": "^3.6",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^7.1"
     },
     "prefer-stable": true
 }
