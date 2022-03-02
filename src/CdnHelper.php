@@ -28,13 +28,13 @@ class CdnHelper
         $allowedFileExtensions = Config::get('statically-cdn.extensions');
 
         if (!is_array($allowedFileExtensions)) {
-            throw new Exception("Configuration value statically-cdn.extensions must be an array.");
+            throw new Exception('Configuration value statically-cdn.extensions must be an array.');
         }
         if (!is_string($siteDomain)) {
-            throw new Exception("Configuration value statically-cdn.site-domain must be a string.");
+            throw new Exception('Configuration value statically-cdn.site-domain must be a string.');
         }
         if (!is_string($cdnDomain)) {
-            throw new Exception("Configuration value statically-cdn.cdn-domain must be a string.");
+            throw new Exception('Configuration value statically-cdn.cdn-domain must be a string.');
         }
 
         /** @var array $parsedSiteDomain */
