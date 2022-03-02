@@ -7,8 +7,6 @@
 
 # ⚡ [Statically.io](https://statically.io/) Laravel/Lumen  helper
 
-Setup a new Laravel / Lumen project by installing and configuring all necessary packages.
-
 ## Installation
 
 ```shell
