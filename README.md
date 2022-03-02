@@ -41,7 +41,7 @@ CDN_SITE_DOMAIN="www.my-website.com"
 
 ## Usage
 
-Just use the `cdn()` helpers instead of `asset()` of `mix()`
+Just use the `cdn()` helper instead of `asset()` of `mix()`
 ```php
 // Before
 asset('img/photo.png')
