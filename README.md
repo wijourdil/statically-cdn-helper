@@ -1,3 +1,10 @@
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/wijourdil/statically-cdn-helper.svg?style=flat-square)](https://packagist.org/packages/wijourdil/statically-cdn-helper)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/wijourdil/statically-cdn-helper/tests?label=tests&style=flat-square)](https://github.com/wijourdil/statically-cdn-helper/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/wijourdil/statically-cdn-helper.svg?style=flat-square)](https://packagist.org/packages/wijourdil/statically-cdn-helper)
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/wijourdil/statically-cdn-helper)
+![Packagist License](https://img.shields.io/packagist/l/wijourdil/statically-cdn-helper)
+[![gitmoji.dev](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat)](https://gitmoji.dev)
+
 # ⚡ [Statically.io](https://statically.io/) Laravel/Lumen  helper
 
 Setup a new Laravel / Lumen project by installing and configuring all necessary packages.
